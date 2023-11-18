@@ -1,7 +1,11 @@
-import { Inter } from 'next/font/google'
+import { Agbalumo } from 'next/font/google'
 import './globals.css'
+import './layout.css'
 
-const inter = Inter({ subsets: ['latin'] })
+import Footer from './components/Footer'
+import Nav from './components/Nav'
+
+const agbalumo = Agbalumo({ weight: '400', subsets: ['latin'] })
 
 export const metadata = {
 	title: 'Santo Chilote',
@@ -11,7 +15,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
 	return (
 		<html lang='en'>
-			<body className={inter.className}>{children}</body>
+			<body className={agbalumo.className}>
+				<Nav />
+				{children}
+				<Footer />
+			</body>
 		</html>
 	)
 }
