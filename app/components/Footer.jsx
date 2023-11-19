@@ -21,7 +21,7 @@ const Footer = () => {
 						href='/'
 						className='mr-2'
 					>
-						<li>Contactanos</li>
+						<li>Contacto</li>
 					</Link>
 				</ul>
 			</div>
