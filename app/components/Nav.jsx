@@ -1,5 +1,12 @@
+'use client'
 import Link from 'next/link'
 import Image from 'next/image'
+function openDrawer() {
+	const drawer = document.querySelector('.drawerNav')
+	drawer.classList.remove('drawerClose')
+	drawer.classList.add('drawerOpen')
+}
+
 const Nav = () => {
 	return (
 		<nav className='px-5 flex nav items-center justify-between border border-gray-300'>
@@ -32,7 +39,10 @@ const Nav = () => {
 				</Link>
 				<a href='/about'>About</a>
 			</div>
-			<div className='lg:hidden md:block flex text-orange-900'>
+			<div
+				className='lg:hidden md:block flex text-orange-900'
+				onClick={openDrawer}
+			>
 				<svg
 					xmlns='http://www.w3.org/2000/svg'
 					fill='none'

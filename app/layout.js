@@ -4,6 +4,7 @@ import './layout.css'
 
 import Footer from './components/Footer'
 import Nav from './components/Nav'
+import DrawerNav from './components/DrawerNav'
 
 const agbalumo = Agbalumo({ weight: '400', subsets: ['latin'] })
 
@@ -16,6 +17,7 @@ export default function RootLayout({ children }) {
 	return (
 		<html lang='en'>
 			<body className={agbalumo.className}>
+				<DrawerNav />
 				<Nav />
 				{children}
 				<Footer />
