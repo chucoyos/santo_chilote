@@ -17,10 +17,6 @@
 	height: 100px;
 	background: var(--bg-default);
 	color: var(--txt-default);
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 0 50px;
 	z-index: 1000;
 }
 .footer {
