@@ -1,9 +1,14 @@
 'use client'
+
+import Link from 'next/link'
+
 export default function DrawerNav() {
 	const closeDrawer = () => {
 		const drawer = document.querySelector('.drawerNav')
 		drawer.classList.remove('drawerOpen')
 		drawer.classList.add('drawerClose')
+		const text_link = document.querySelector('#text_link')
+		text_link.classList.add('text_link')
 	}
 	return (
 		<div
@@ -26,7 +31,17 @@ export default function DrawerNav() {
 					/>
 				</svg>
 			</div>
-			<h1>DrawerNav</h1>
+			<div
+				id='text_link'
+				className='text_link'
+			>
+				<Link href='/'>
+					<h1 className='text-2xl m-2'>Home</h1>
+				</Link>
+				<Link href='/menu'>
+					<h1 className='text-2xl m-2'>Menu</h1>
+				</Link>
+			</div>
 		</div>
 	)
 }

@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import PromoSection from './components/PromoSection'
 
 export default function Home() {
 	return (
@@ -11,6 +12,7 @@ export default function Home() {
 					Best Mexican fish tacos in the Todos Santos area
 				</p>
 			</div>
+			<PromoSection />
 		</div>
 	)
 }

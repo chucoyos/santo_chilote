@@ -5,6 +5,8 @@ function openDrawer() {
 	const drawer = document.querySelector('.drawerNav')
 	drawer.classList.remove('drawerClose')
 	drawer.classList.add('drawerOpen')
+	const text_link = document.querySelector('#text_link')
+	text_link.classList.remove('text_link')
 }
 
 const Nav = () => {
@@ -37,7 +39,7 @@ const Nav = () => {
 				>
 					Menu
 				</Link>
-				<a href='/about'>About</a>
+				<a href='/'>Home</a>
 			</div>
 			<div
 				className='lg:hidden md:block flex text-orange-900'
