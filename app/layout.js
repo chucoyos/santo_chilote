@@ -17,10 +17,12 @@ export default function RootLayout({ children }) {
 	return (
 		<html lang='en'>
 			<body className={agbalumo.className}>
-				<DrawerNav />
-				<Nav />
-				{children}
-				<Footer />
+				<div className='flex flex-col'>
+					<DrawerNav />
+					<Nav />
+					{children}
+					<Footer />
+				</div>
 			</body>
 		</html>
 	)
