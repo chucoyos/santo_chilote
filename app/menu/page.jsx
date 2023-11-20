@@ -30,6 +30,48 @@ const Menu = () => (
 				image='/Hot-cakes.png'
 			/>
 		</div>
+		<div className='flex flex-row justify-center'>
+			<FoodItem
+				name='Hot Cakes'
+				image='/Hot-cakes.png'
+			/>
+			<FoodItem
+				name='Hot Cakes'
+				image='/Hot-cakes.png'
+			/>
+			<FoodItem
+				name='Hot Cakes'
+				image='/Hot-cakes.png'
+			/>
+		</div>
+		<div className='flex flex-row justify-center'>
+			<FoodItem
+				name='Hot Cakes'
+				image='/Hot-cakes.png'
+			/>
+			<FoodItem
+				name='Hot Cakes'
+				image='/Hot-cakes.png'
+			/>
+			<FoodItem
+				name='Hot Cakes'
+				image='/Hot-cakes.png'
+			/>
+		</div>
+		<div className='flex flex-row justify-center'>
+			<FoodItem
+				name='Hot Cakes'
+				image='/Hot-cakes.png'
+			/>
+			<FoodItem
+				name='Hot Cakes'
+				image='/Hot-cakes.png'
+			/>
+			<FoodItem
+				name='Hot Cakes'
+				image='/Hot-cakes.png'
+			/>
+		</div>
 	</div>
 )
 
